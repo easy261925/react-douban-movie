@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.douban-title header{
+    width: 100%;
+    height: 28px;
+    background-color: #545652
+}
+.nav-box ul{
+    overflow: hidden;
+}
+.nav-box ul li a:hover{
+    color:#fff;
+}
+.nav-box ul li {
+    padding: 0 12px;
+    list-style: none;
+    float: left;
+}
+.nav-box a{
+    color: #d5d5d5;
+    text-decoration: none;
+    line-height: 28px;
+    font-size: 12px;
+}
+.nav-box{
+    overflow: hidden;
+}
+.nav-left{
+    float: left;
+}
+.nav-doubanapp{
+    float: right;
+}
+.nav-info{
+    float: right;
+}
