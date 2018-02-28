@@ -42,8 +42,9 @@ class ScreeningBd extends Component {
   render() {
     const screenData = this.state.screenData;
     // console.log(screenData);
+    const a = true;
     const listItems = screenData.map((el,i)=>
-     <li key={i}>{el.title}</li>
+     <ScreenItem data={el} key={i}/>
      )
     console.log(listItems);
     return (
@@ -68,6 +69,5 @@ class ScreenItem extends Component {
     )
   }
 }
-
 
 export default screening;
