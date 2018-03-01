@@ -2,6 +2,7 @@ import React ,{ Component, Fragment } from "react";
 import "../assets/style/douban-sousuo.css";
 import logo from "../assets/image/logo.png";
 import sousuo from "../assets/image/搜索.png";
+import "../assets/image/j.png";
 
 class Sousuo extends Component {
     render(){
