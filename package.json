@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "build:dll": "webpack --config webpack.dll.js"
+    "build:dll": "webpack --config webpack.dll.js",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.40",
@@ -25,6 +26,7 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2"

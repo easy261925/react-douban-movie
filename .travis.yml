@@ -1,0 +1,14 @@
+branches:
+  only:
+    - master
+language: node_js
+node_js:
+  - "8"
+before_scripts:
+  - npm run build
+script:
+  - npm i
+  - bash ./scripts/deploy.sh
+sudo: false
+install:
+  - npm install
