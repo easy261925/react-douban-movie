@@ -10,6 +10,7 @@ class App extends Component {
         <DoubanTitle/>
         <DoubanSousuo/>
         <Screening/>
+        <h1>哈哈</h1>
       </Fragment>
     )
   }
