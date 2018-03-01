@@ -33,8 +33,14 @@ class ScreeningBd extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      screenData: screenData
+      screenData: []
     }
+  }
+
+  componentDidMount() {
+    this.setState({
+      screenData: screenData
+    })
   }
 
   render() {
@@ -54,7 +60,7 @@ class ScreeningBd extends Component {
 
 class ScreenItem extends Component {
   render() {
-    const image = this.props.data.images.small;
+    const image = this.props.data.images.medium;
     const title = this.props.data.title;
     return (
       <li>
