@@ -1,7 +1,5 @@
 import React, {Component, Fragment} from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import fetch from "whatwg-fetch";
-import axios from "axios";
 import "../assets/style/screening.css";
 import screenData from "./screenData";
 
@@ -41,8 +39,7 @@ class ScreeningBd extends Component {
 
   render() {
     const screenData = this.state.screenData;
-    // console.log(screenData);
-    const a = true;
+    console.log(screenData);
     const listItems = screenData.map((el,i)=>
      <ScreenItem data={el} key={i}/>
      )
@@ -57,12 +54,13 @@ class ScreeningBd extends Component {
 
 class ScreenItem extends Component {
   render() {
-    const image = this.props.data.images.small
+    const image = this.props.data.images.small;
+    const title = this.props.data.title;
     return (
       <li>
         <ul>
           <li className="poster">
-            <img src={image} alt=""/>
+            <img src={image} alt={title}/>
           </li>
         </ul>
       </li>
