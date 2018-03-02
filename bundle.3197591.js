@@ -330,6 +330,8 @@ __webpack_require__(14);
 
 var _screenData = _interopRequireDefault(__webpack_require__(15));
 
+__webpack_require__(16);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
@@ -420,13 +422,14 @@ function (_Component2) {
   _createClass(ScreenItem, [{
     key: "render",
     value: function render() {
-      var image = this.props.data.images.medium;
+      var image = this.props.data.images.small;
       var title = this.props.data.title;
       return _react.default.createElement("li", null, _react.default.createElement("ul", null, _react.default.createElement("li", {
         className: "poster"
       }, _react.default.createElement("img", {
         src: image,
-        alt: title
+        alt: title,
+        className: "poster-img"
       }))));
     }
   }]);
@@ -564,9 +567,9 @@ var screenData = [{
   }],
   "year": "2018",
   "images": {
-    "small": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2511355624.webp",
-    "large": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2511355624.webp",
-    "medium": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2511355624.webp"
+    "small": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2511355624.webp",
+    "large": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2511355624.webp",
+    "medium": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2511355624.webp"
   },
   "alt": "https://movie.douban.com/subject/26698897/",
   "id": "26698897"
@@ -680,9 +683,9 @@ var screenData = [{
   }],
   "year": "2018",
   "images": {
-    "small": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2511560763.webp",
-    "large": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2511560763.webp",
-    "medium": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2511560763.webp"
+    "small": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2511560763.webp",
+    "large": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2511560763.webp",
+    "medium": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2511560763.webp"
   },
   "alt": "https://movie.douban.com/subject/27114417/",
   "id": "27114417"
@@ -863,9 +866,9 @@ var screenData = [{
   }],
   "year": "2017",
   "images": {
-    "small": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2513341534.webp",
-    "large": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2513341534.webp",
-    "medium": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2513341534.webp"
+    "small": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2513341534.webp",
+    "large": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2513341534.webp",
+    "medium": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2513341534.webp"
   },
   "alt": "https://movie.douban.com/subject/3036465/",
   "id": "3036465"
@@ -979,9 +982,9 @@ var screenData = [{
   }],
   "year": "2017",
   "images": {
-    "small": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2511346392.webp",
-    "large": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2511346392.webp",
-    "medium": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2511346392.webp"
+    "small": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2511346392.webp",
+    "large": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2511346392.webp",
+    "medium": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2511346392.webp"
   },
   "alt": "https://movie.douban.com/subject/3914513/",
   "id": "3914513"
@@ -1037,9 +1040,9 @@ var screenData = [{
   }],
   "year": "2018",
   "images": {
-    "small": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2507572275.webp",
-    "large": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2507572275.webp",
-    "medium": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2507572275.webp"
+    "small": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2507572275.webp",
+    "large": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2507572275.webp",
+    "medium": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2507572275.webp"
   },
   "alt": "https://movie.douban.com/subject/6874741/",
   "id": "6874741"
@@ -1095,9 +1098,9 @@ var screenData = [{
   }],
   "year": "2017",
   "images": {
-    "small": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2507227732.webp",
-    "large": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2507227732.webp",
-    "medium": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2507227732.webp"
+    "small": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2507227732.webp",
+    "large": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2507227732.webp",
+    "medium": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2507227732.webp"
   },
   "alt": "https://movie.douban.com/subject/26862829/",
   "id": "26862829"
@@ -1153,9 +1156,9 @@ var screenData = [{
   }],
   "year": "2017",
   "images": {
-    "small": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2510057340.webp",
-    "large": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2510057340.webp",
-    "medium": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2510057340.webp"
+    "small": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2510057340.webp",
+    "large": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2510057340.webp",
+    "medium": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2510057340.webp"
   },
   "alt": "https://movie.douban.com/subject/27027913/",
   "id": "27027913"
@@ -1434,9 +1437,9 @@ var screenData = [{
   }],
   "year": "2017",
   "images": {
-    "small": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2511434383.webp",
-    "large": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2511434383.webp",
-    "medium": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2511434383.webp"
+    "small": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2511434383.webp",
+    "large": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2511434383.webp",
+    "medium": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2511434383.webp"
   },
   "alt": "https://movie.douban.com/subject/26742730/",
   "id": "26742730"
@@ -1559,9 +1562,9 @@ var screenData = [{
   }],
   "year": "2017",
   "images": {
-    "small": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2510825300.webp",
-    "large": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2510825300.webp",
-    "medium": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2510825300.webp"
+    "small": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2510825300.webp",
+    "large": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2510825300.webp",
+    "medium": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2510825300.webp"
   },
   "alt": "https://movie.douban.com/subject/25846857/",
   "id": "25846857"
@@ -1617,9 +1620,9 @@ var screenData = [{
   }],
   "year": "2015",
   "images": {
-    "small": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2509401725.webp",
-    "large": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2509401725.webp",
-    "medium": "http://img7.doubanio.com/view/photo/s_ratio_poster/public/p2509401725.webp"
+    "small": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2509401725.webp",
+    "large": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2509401725.webp",
+    "medium": "http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2509401725.webp"
   },
   "alt": "https://movie.douban.com/subject/26631663/",
   "id": "26631663"
@@ -1627,6 +1630,12 @@ var screenData = [{
 var _default = screenData;
 exports.default = _default;
 
+/***/ }),
+/* 16 */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| .poster-img {\n|     $width: 200px;\n|     $height: 200px;");
+
 /***/ })
 ],[3]);
-//# sourceMappingURL=bundle.c2fa1f9.js.map
+//# sourceMappingURL=bundle.3197591.js.map
