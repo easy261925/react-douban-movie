@@ -59,6 +59,8 @@ var _DoubanSousuo = _interopRequireDefault(__webpack_require__(8));
 
 var _screening = _interopRequireDefault(__webpack_require__(13));
 
+__webpack_require__(17);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
@@ -89,7 +91,9 @@ function (_Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement(_react.Fragment, null, _react.default.createElement(_DoubanTitle.default, null), _react.default.createElement(_DoubanSousuo.default, null), _react.default.createElement(_screening.default, null), _react.default.createElement("h1", null, "\u54C8\u54C8"));
+      return _react.default.createElement(_react.Fragment, null, _react.default.createElement(_DoubanTitle.default, null), _react.default.createElement(_DoubanSousuo.default, null), _react.default.createElement("div", {
+        className: "app-section"
+      }, _react.default.createElement(_screening.default, null)));
     }
   }]);
 
@@ -276,7 +280,11 @@ function (_Component) {
       }, _react.default.createElement("input", {
         type: "submit",
         value: "\u641C\u7D22"
-      })))));
+      })), _react.default.createElement("div", {
+        className: "both"
+      })), _react.default.createElement("div", {
+        className: "douban-sousuo-hr"
+      })));
     }
   }]);
 
@@ -392,7 +400,7 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      var screenData = this.state.screenData;
+      var screenData = this.state.screenData.splice(0, 5);
       console.log(screenData);
       var listItems = screenData.map(function (el, i) {
         return _react.default.createElement(ScreenItem, {
@@ -401,7 +409,9 @@ function (_Component) {
         });
       });
       console.log(listItems);
-      return _react.default.createElement("ul", null, listItems);
+      return _react.default.createElement("ul", {
+        className: "clear-float"
+      }, listItems);
     }
   }]);
 
@@ -424,7 +434,9 @@ function (_Component2) {
     value: function render() {
       var image = this.props.data.images.small;
       var title = this.props.data.title;
-      return _react.default.createElement("li", null, _react.default.createElement("ul", null, _react.default.createElement("li", {
+      return _react.default.createElement("li", {
+        className: "l"
+      }, _react.default.createElement("ul", null, _react.default.createElement("li", {
         className: "poster"
       }, _react.default.createElement("img", {
         src: image,
@@ -1634,8 +1646,14 @@ exports.default = _default;
 /* 16 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| .poster-img {\n|     $width: 200px;\n|     $height: 200px;");
+throw new Error("Module parse failed: Identifier directly after number (1:11)\nYou may need an appropriate loader to handle this file type.\n| $width: 115px;\n| $height: 164px;\n| *{");
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| .app-section{\n|     width: 1040px;\n|     margin: 0 auto;");
 
 /***/ })
 ],[3]);
-//# sourceMappingURL=bundle.3197591.js.map
+//# sourceMappingURL=bundle.df256fa.js.map
