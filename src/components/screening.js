@@ -1,7 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import "../assets/style/screening.css";
-import screenData from "./screenData";
+import screenData from "../assets/data/screenData";
+import "../assets/style/screening.scss";
 
 const screening = () => {
   return (
@@ -60,13 +61,13 @@ class ScreeningBd extends Component {
 
 class ScreenItem extends Component {
   render() {
-    const image = this.props.data.images.medium;
+    const image = this.props.data.images.small;
     const title = this.props.data.title;
     return (
       <li>
         <ul>
           <li className="poster">
-            <img src={image} alt={title}/>
+            <img src={image} alt={title} className="poster-img"/>
           </li>
         </ul>
       </li>
