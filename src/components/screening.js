@@ -45,14 +45,14 @@ class ScreeningBd extends Component {
   }
 
   render() {
-    const screenData = this.state.screenData;
+    const screenData = this.state.screenData.splice(0,5);
     console.log(screenData);
     const listItems = screenData.map((el,i)=>
      <ScreenItem data={el} key={i}/>
      )
     console.log(listItems);
     return (
-      <ul>
+      <ul className="clear-float"> 
        {listItems}
       </ul>
     )
@@ -64,8 +64,8 @@ class ScreenItem extends Component {
     const image = this.props.data.images.small;
     const title = this.props.data.title;
     return (
-      <li>
-        <ul>
+      <li className="l">
+        <ul >
           <li className="poster">
             <img src={image} alt={title} className="poster-img"/>
           </li>

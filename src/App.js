@@ -2,6 +2,7 @@ import React, {Component, Fragment} from "react";
 import DoubanTitle from "./components/Douban-Title";
 import DoubanSousuo from "./components/Douban-sousuo";
 import Screening from "./components/screening";
+import "./assets/style/app-class.scss";
 
 class App extends Component {
   render() {
@@ -9,8 +10,9 @@ class App extends Component {
       <Fragment>
         <DoubanTitle/>
         <DoubanSousuo/>
-        <Screening/>
-        <h1>哈哈</h1>
+        <div className="app-section">
+          <Screening/>
+        </div>
       </Fragment>
     )
   }

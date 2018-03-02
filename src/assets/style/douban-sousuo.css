@@ -4,7 +4,7 @@
 }
 .douban-sousuo{
     width: 100%;
-    background-color: #f0f3f5;
+    background-color: #f0f3f5;   
 }
 .douban-sousuo header{
     width: 1040px;
@@ -13,6 +13,7 @@
     position: relative;
     padding: 20px 0 5px;
     zoom: 1;
+    margin-bottom: 20px;
 }
 
 .sousuo-search fieldset{
@@ -34,8 +35,9 @@
     width: 96%;
     margin: 0;
     text-align: left;
-    height: 30px;
+    height: 31.5px;
     padding-left: 10px;
+    margin-left: 40px;
     height: 28px\9;
     line-height: 28px\9;
     outline: none;
@@ -51,7 +53,9 @@
     height: 34px;
     zoom: 1;
     overflow: hidden;
-    
+    border-radius: 0 5px 5px 0;
+    float: left;
+    margin-left: 34px;
 }
 .inp-btn input{
     width: 100%;
@@ -62,5 +66,19 @@
     color: transparent;
     cursor: pointer;
     background-image: url("../image/j.png");
-    background-position:0  35px;
+    background-position:-2px  35px;
+}
+.sousuo-search{
+    float: left;    
+}
+.logo{
+    float: left;
+}
+.both{
+    clear: both;
+}
+.douban-sousuo-hr{
+    width: 100%;
+    padding: 10px 0 10px;
+    border-top:1px solid #ddd; 
 }

@@ -27,7 +27,9 @@ class Sousuo extends Component {
                         <div className="inp-btn">
                             <input type="submit" value="搜索"/>
                         </div>
+                        <div className="both"></div>
                     </header>
+                    <div className="douban-sousuo-hr"></div>
                 </div>
             </Fragment>
         )

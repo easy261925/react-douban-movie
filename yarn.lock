@@ -3635,6 +3635,10 @@ node-libs-browser@^2.0.0:
     util "^0.10.3"
     vm-browserify "0.0.4"
 
+node-loader@^0.6.0:
+  version "0.6.0"
+  resolved "http://registry.npm.taobao.org/node-loader/download/node-loader-0.6.0.tgz#c797ef51095ed5859902b157f6384f6361e05ae8"
+
 node-pre-gyp@^0.6.39:
   version "0.6.39"
   resolved "http://registry.npm.taobao.org/node-pre-gyp/download/node-pre-gyp-0.6.39.tgz#c00e96860b23c0e1420ac7befc5044e1d78d8649"
