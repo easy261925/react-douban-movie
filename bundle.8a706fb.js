@@ -370,13 +370,36 @@ var ScreeningHd = function ScreeningHd() {
     to: "/cinema/nowplaying/"
   }, "\u5168\u90E8\u6B63\u5728\u70ED\u6620\xBB")), _react.default.createElement("span", null, _react.default.createElement(_reactRouterDom.Link, {
     to: "./later/"
-  }, "\u5373\u5C06\u4E0A\u6620\xBB")))));
+  }, "\u5373\u5C06\u4E0A\u6620\xBB"))), _react.default.createElement(SlideControl, null)));
 };
+
+var SlideControl =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(SlideControl, _Component);
+
+  function SlideControl() {
+    _classCallCheck(this, SlideControl);
+
+    return _possibleConstructorReturn(this, (SlideControl.__proto__ || Object.getPrototypeOf(SlideControl)).apply(this, arguments));
+  }
+
+  _createClass(SlideControl, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        className: "ui-slide-control"
+      });
+    }
+  }]);
+
+  return SlideControl;
+}(_react.Component);
 
 var ScreeningBd =
 /*#__PURE__*/
-function (_Component) {
-  _inherits(ScreeningBd, _Component);
+function (_Component2) {
+  _inherits(ScreeningBd, _Component2);
 
   function ScreeningBd(props) {
     var _this;
@@ -420,8 +443,8 @@ function (_Component) {
 
 var ScreenItem =
 /*#__PURE__*/
-function (_Component2) {
-  _inherits(ScreenItem, _Component2);
+function (_Component3) {
+  _inherits(ScreenItem, _Component3);
 
   function ScreenItem() {
     _classCallCheck(this, ScreenItem);
@@ -1656,4 +1679,4 @@ throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an ap
 
 /***/ })
 ],[3]);
-//# sourceMappingURL=bundle.df256fa.js.map
+//# sourceMappingURL=bundle.8a706fb.js.map
