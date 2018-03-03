@@ -25,9 +25,20 @@ const ScreeningHd = () => {
             <Link to="./later/">即将上映»</Link>
           </span>
         </h2>
+        <SlideControl/>
       </div>
     </Router>
   )
+}
+
+class SlideControl extends Component {
+  render() {
+    return (
+      <div className="ui-slide-control">
+
+      </div>
+    )
+  }
 }
 
 class ScreeningBd extends Component {
